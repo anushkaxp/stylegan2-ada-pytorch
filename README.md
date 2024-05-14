@@ -207,7 +207,7 @@ Step 2: Extract images from TFRecords using `dataset_tool.py` from the [TensorFl
 # Using dataset_tool.py from TensorFlow version at
 # https://github.com/NVlabs/stylegan2-ada/
 python ../stylegan2-ada/dataset_tool.py unpack \
-    --tfrecord_dir=~/ffhq-dataset/tfrecords/ffhq --output_dir=/tmp/ffhq-unpacked
+    --source=/ffhq-dataset/tfrecords/ffhq --dest=/tmp/ffhq-unpacked # for colab users only
 ```
 
 Step 3: Create ZIP archive using `dataset_tool.py` from this repository:
